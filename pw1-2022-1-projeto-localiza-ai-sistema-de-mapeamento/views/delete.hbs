@@ -1,0 +1,16 @@
+<div id="Delete">
+    <h1>Tem certeza que deseja excluir seu perfil?</h1>
+
+    <form  action="/delete" method="POST">
+        <div id="deleteCamp" class="list-inline">
+            <h5>Confirme sua senha:</h5>
+            <input  name="confirmationPassword" type="password" class="form-control" placeholder="Confirme sua senha" required>
+            <button style="  " class="btn  btn-block btn-danger">Excluir Perfil</button>
+        </div>
+        
+        
+    </form>
+    <a href="/users/{{getUsername currentUser}}">
+        <button class="btn btn-outline-success">Voltar</button>
+    </a>
+</div>

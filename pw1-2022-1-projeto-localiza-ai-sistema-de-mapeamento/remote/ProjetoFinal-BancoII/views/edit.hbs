@@ -1,0 +1,19 @@
+<h1>Atualize seu perfil</h1>
+
+<form action="/edit" method="post">
+    <div>
+        <label for="displayname" class="form-label fLbl">
+            Nome do Perfil:
+        </label>
+        <input name="displayname" type="text" class="form-control" placeholder="Nome de exibição" value="{{getName currentUser}}">
+    </div>
+    <div>
+        <label for="bio" class="form-label fLbl">
+            Boletim de Hoje:
+        </label>
+        <textarea id="bioBox" name="bio" class="form-control" placeholder="Informe o Boletim Aqui!">{{getBio currentUser}}</textarea>
+    </div>
+    
+    <input type="submit" value="Atualizar" class="btn btn-success btn-block">
+    
+</form>

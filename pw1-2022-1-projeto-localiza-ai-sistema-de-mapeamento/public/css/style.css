@@ -1,0 +1,329 @@
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #brand
+  {
+    width: 35% !important;
+  }
+  #form
+  {
+    width: 25% !important;
+  }
+
+  #closePopUp
+  {
+    margin-left: 150px !important;
+  }
+
+  #popUp
+  {
+    left: 125px !important;
+    top: 298px !important;
+    width: 50% !important;
+  }
+
+  #multiPopUp
+  {
+    left: 125px !important;
+    top: 298px !important;
+    width: 50% !important;
+  }
+
+  #nome
+  {
+    font-size: 14pt !important;
+    width: 60% !important;
+  }
+  #savePoint
+  {
+    margin-left: 300px !important;
+    margin-top: -44px !important;
+  }
+}
+
+@media only screen and (min-width: 768px)
+{
+  #initScreen
+  {
+    margin-left: 10%;
+  }
+
+  .Buttons
+  {
+    margin-left: -10%;
+  }
+
+}
+
+
+#map {
+  width: 100%;
+  height: 100vh;
+  float:right;
+}
+
+#initScreen
+{
+  height: 100vh;
+}
+
+@keyframes mudaBG {
+  from {background-color: #dc3545;}
+  to {background-color: #ffc107 ;}
+}
+
+.rects
+{
+  width: 25px;
+  height: 75px;
+  background-color: #dc3545;
+  animation-name: mudaBG;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+
+
+#rectangles
+{
+  margin-top: -450px;
+  margin-left: 200px;
+}
+
+#rec2
+{
+  margin-left: 45px;
+  margin-top: -75px;
+  height: 125px;
+  
+}
+
+#rec3
+{
+  
+  height: 175px;
+  margin-right: 0px;
+  margin-left: 90px;
+  margin-bottom: 0px;
+  margin-top: -125px;
+}
+
+@keyframes mudaFG {
+  from {color: #dc3545;}
+  to {color: #ffc107 ;}
+}
+
+.Brand
+{
+  font-family: 'Lobster', cursive;
+}
+
+.Brand h1 span
+{
+  animation-name: mudaFG;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.Brand a span
+{
+  animation-name: mudaFG;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+#initScreen h1
+{
+  margin-top: 228px;
+  font-family: 'Lobster', cursive;
+  font-size: 60pt;
+}
+
+#initScreen h4
+{
+  
+  margin-left: 74px;
+  margin-top: -24px;
+  font-family: 'Lobster', cursive;
+  font-size: 20pt;
+}
+
+#initScreen h4 span, h1 span
+{
+  animation-name: mudaFG;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+#app
+{
+  justify-content: center;
+}
+
+#closePopUp
+{
+  margin-left: 382px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: red;
+  font-size: 15pt;
+  
+}
+
+.popup hr
+{
+  margin-top: 0rem;
+}
+
+.popup h4
+{
+  margin-top: -27px;
+}
+
+.popup
+{
+  width: 30%;
+  height: 10%;
+  justify-content: center;
+  position: fixed !important;
+  left: 479px;
+  top: 218px;   
+  display: none !important;
+
+}
+
+.popupShowing
+{
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+.popupClosing
+{
+  -webkit-animation: fadeOut 1s;
+  animation: fadeOut 1s;
+  
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+@-webkit-keyframes fadeOut
+{
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity:0 ;}
+}
+
+#brand
+{
+  width: 15%;
+  border-radius: 0 5px 5px 0;
+  height: 10%;
+  justify-content: center;
+  position: fixed;
+  margin-top: 0;
+  font-family: 'Lobster', cursive;
+  font-size: 60pt;
+}
+
+#brand span
+{
+  animation-name: mudaFG;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+#form {    
+  width: 8%;
+  height: 35%;
+  justify-content: center;
+  position: fixed;
+  margin-top: 250px;
+  margin-left: -25px;
+  border-radius: 0 50px 50px 0;
+}
+
+.formCard
+{
+  width: 8%;
+  height: 35%;
+  justify-content: center;
+  position: fixed;
+  border-radius: 0 50px 50px 0;
+  font-size: 20pt !important;
+  top: -320px;
+}
+
+#form form
+{
+  margin-left: 25px;
+}
+
+#form button
+{
+  font-size: 18pt;
+}
+
+
+
+
+#Add
+{
+  border-radius: 0 50px 50px 0;
+}
+
+.btnCard
+{
+  width: 51px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.uiBtn
+{
+  width: 50px;
+}
+
+#nome
+{
+  width: 70%;
+  font-size: 20pt;
+  margin-left: 57px;
+  margin-bottom: -52px; 
+}
+
+#savePoint
+{
+  display: none;
+  margin-bottom: 0px;
+  margin-left: 346px;
+  margin-top: -57px;
+}
+
+#footer
+{
+  position: fixed;
+  top: 575px;
+  left: 450px;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

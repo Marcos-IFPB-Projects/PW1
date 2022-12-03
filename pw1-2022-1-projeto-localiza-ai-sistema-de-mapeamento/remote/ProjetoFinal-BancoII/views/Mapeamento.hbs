@@ -1,0 +1,80 @@
+<body>
+  
+    <div id="app">
+      <div id="map"></div>
+
+      <div id="brand" class="card bg-dark text-white">
+        <h1>Localiza<span>.ai</span></h1>
+      </div>
+
+      <div id="form" class="card bg-dark justify-content-center">
+          <form action="/pagina-processa-dados-do-form" method="post">
+              
+              
+              <div>
+                <div id="Add" class=" bg-dark btnCard">
+                  <div>
+                    <input style="width: 25%; display: none;" type="text" class="form-control" placeholder="Informe um Nome:" id="nome" />
+                </div>
+                  <button type="button"  class=" uiBtn btn btn-outline-danger rounded-circle" onclick="callField()" id="Save"><i id="addIcon" class="fa-solid fa-plus"></i></button>
+                  </button>
+                  <button type="button"  class=" uiBtn btn btn-outline-danger rounded-circle" onclick="salvar()" id="savePoint"><i class="fa-solid fa-floppy-disk"></i></button>
+                  </button>
+                </div>
+                <div class=" bg-dark btnCard">
+                  <button type="button"  class=" uiBtn  btn btn-outline-danger rounded-circle " onclick="VerPonto()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class=" bg-dark btnCard">
+                    <button type="button"  class=" uiBtn  btn btn-outline-danger rounded-circle" onclick="showMultiPopUp()"><i class="fa-solid fa-minus"></i></button>
+                  </div>
+                  
+              </div>
+              <div style="display: none;">
+                <p class="text-white"><small><strong>Dica:</strong> Clique em algum lugar do mapa para <strong>inserir</strong> um Ponto!</small></p>
+              </div>
+          </form>
+          
+      </div>
+    </div>
+    
+
+    <div id="popUp" style="display: inline-block;" class="popup card bg-dark text-white">
+      <button type="button" onclick="closePopUp()" id="closePopUp">X</button>
+      <h4 id="title">Aviso!</h4>
+      
+      <hr>
+      <p id="message">Informação</p>
+    </div>
+
+    <div id="multiPopUp" style="display: inline-block;" class="popup card bg-dark text-white text-center">
+      <button type="button" onclick="closePopUp()" id="closePopUp">X</button>
+      <h4 id="Deltitle">Aviso!</h4>
+      
+      <hr>
+      <p style="display: block;" id="Delmessage">Tem certeza? Isso irá excluir TODOS os pontos marcados.</p>
+      <!--
+      <div class="d-flex justify-content-center">
+        <input style="width: 90%; display: none;" type="text" class="form-control" placeholder="Informe o Nome do Ponto:" id="pointName" />
+      </div>
+      -->
+      <hr>
+      <div class="btn-options d-flex justify-content-around">
+        <button id="btn1" class="btn btn-outline-danger" onclick="removerPontos()">Remover</button>
+        <button id="btn2" class="btn btn-outline-danger" onclick="closePopUp()">Cancelar</button>
+      </div>
+    </div>
+
+    <div id="footer" class="card bg-dark text-white justify-content-center">
+        <p>Desenvolvido com ❤ pela Localiza.ai em parceria com o IFPB-CZ.</p>
+    </div>
+
+    
+
+    
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
+</html>

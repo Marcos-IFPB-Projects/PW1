@@ -1,0 +1,17 @@
+{{#if (isOwnProfile currentUser user)}}
+    <div class="pull-right">
+        <a style=" color:#ffc107; margin-bottom: 4px;" href="/edit" class="nav-link btn btn-outline-success perfilBtn">Atualizar Boletim</a>
+        <a style="color:#dc3545, 103, 130); margin-bottom: 4px;" href="/delete" class="nav-link btn btn-outline-danger perfilBtn">Excluir Perfil</a>
+    </div>
+{{/if}}
+
+<h1>{{getName user}}</h1>
+<h2>{{getBio user}}</h2>
+
+{{#if (getBio user)}}
+    <p class="text-success">Cadastrou-se em {{getCreatedAt user}}</p>
+{{/if}}
+
+<a href="/">
+        <button class="btn btn-outline-success">Voltar</button>
+</a>
